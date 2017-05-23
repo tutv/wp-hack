@@ -1,3 +1,5 @@
+# WP Hack
+
 ## Script
 
 ```javascript
